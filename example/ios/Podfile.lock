@@ -2,7 +2,7 @@ PODS:
   - Flutter (1.0.0)
   - integration_test (0.0.1):
     - Flutter
-  - mopro_flutter_package (0.0.1):
+  - mopro_flutter_bindings (0.0.1):
     - Flutter
   - path_provider_foundation (0.0.1):
     - Flutter
@@ -11,7 +11,7 @@ PODS:
 DEPENDENCIES:
   - Flutter (from `Flutter`)
   - integration_test (from `.symlinks/plugins/integration_test/ios`)
-  - mopro_flutter_package (from `.symlinks/plugins/mopro_flutter_package/ios`)
+  - mopro_flutter_bindings (from `.symlinks/plugins/mopro_flutter_bindings/ios`)
   - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
 
 EXTERNAL SOURCES:
@@ -19,17 +19,17 @@ EXTERNAL SOURCES:
     :path: Flutter
   integration_test:
     :path: ".symlinks/plugins/integration_test/ios"
-  mopro_flutter_package:
-    :path: ".symlinks/plugins/mopro_flutter_package/ios"
+  mopro_flutter_bindings:
+    :path: ".symlinks/plugins/mopro_flutter_bindings/ios"
   path_provider_foundation:
     :path: ".symlinks/plugins/path_provider_foundation/darwin"
 
 SPEC CHECKSUMS:
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   integration_test: 4a889634ef21a45d28d50d622cf412dc6d9f586e
-  mopro_flutter_package: 7eb6ae26ee2763b227353ba4510d9b9e08ec95ec
+  mopro_flutter_bindings: ea1507b3c65d4d6bccf59d1ecf404b09803cf2d4
   path_provider_foundation: 080d55be775b7414fd5a5ef3ac137b97b097e564
 
-PODFILE CHECKSUM: 53a6aebc29ccee84c41f92f409fc20cd4ca011f1
+PODFILE CHECKSUM: 4305caec6b40dde0ae97be1573c53de1882a07e5
 
 COCOAPODS: 1.16.2

@@ -1,7 +1,7 @@
-name: mopro_flutter_package
-description: "A Flutter plugin for Mopro, enabling mobile proving with modern zero-knowledge proof systems."
+name: mopro_flutter_bindings
+description: "A new Flutter FFI plugin project."
 version: 0.0.1
-homepage: "https://zkmopro.org/"
+homepage:
 
 environment:
   sdk: ^3.7.2
@@ -10,13 +10,17 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_rust_bridge: 2.11.1
   plugin_platform_interface: ^2.0.2
-  path_provider: ^2.1.4
 
 dev_dependencies:
+  ffi: ^2.1.3
+  ffigen: ^13.0.0
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  integration_test:
+    sdk: flutter
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -33,19 +37,20 @@ flutter:
   # This is required for using `dart:ffi`.
   # All these are used by the tooling to maintain consistency when
   # adding or updating assets for this project.
+  #
+  # Please refer to README.md for a detailed explanation.
   plugin:
     platforms:
-    # This plugin project was generated without specifying any
-    # platforms with the `--platform` argument. If you see the `some_platform` map below, remove it and
-    # then add platforms following the instruction here:
-    # https://flutter.dev/to/pubspec-plugin-platforms
-    # -------------------
       android:
-        package: com.example.mopro_flutter_package
-        pluginClass: MoproFlutterPackagePlugin
+        ffiPlugin: true
       ios:
-        pluginClass: MoproFlutterPackagePlugin
-    # -------------------
+        ffiPlugin: true
+      linux:
+        ffiPlugin: true
+      macos:
+        ffiPlugin: true
+      windows:
+        ffiPlugin: true
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
