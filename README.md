@@ -8,17 +8,17 @@ Follow these steps to integrate the Mopro Flutter package into your project.
 
 ### Adding a package dependency to an app
 
-1.  **Add Dependency:** You can add `mopro_flutter_package` to your project by manually editing `pubspec.yaml`.
+1.  **Add Dependency:** You can add `mopro_flutter_bindings` to your project by manually editing `pubspec.yaml`.
 
     -   **Manual Edit (Required for local path or specific Git dependencies):**
-        Open your `pubspec.yaml` file and add `mopro_flutter_package` under `dependencies`.
+        Open your `pubspec.yaml` file and add `mopro_flutter_bindings` under `dependencies`.
 
         ```yaml
         dependencies:
             flutter:
                 sdk: flutter
 
-            mopro_flutter_package:
+            mopro_flutter_bindings:
                 git:
                     url: https://github.com/zkmopro/mopro_flutter_package
             # Or
@@ -52,8 +52,8 @@ Here's a basic example demonstrating how to use the package to generate and veri
 
 ```dart
 // Import the package
-import 'package:mopro_flutter_package/src/rust/third_party/mopro_example_app.dart'; // Change to your library name
-import 'package:mopro_flutter_package/src/rust/frb_generated.dart';
+import 'package:mopro_flutter_bindings/src/rust/third_party/mopro_example_app.dart'; // Change to your library name
+import 'package:mopro_flutter_bindings/src/rust/frb_generated.dart';
 
 final zkeyPath = await copyAssetToFileSystem(
     'assets/multiplier2_final.zkey',
